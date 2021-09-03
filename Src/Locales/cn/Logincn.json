@@ -1,0 +1,18 @@
+{
+    "title": "歡迎",
+    "description": {
+      "part1": "開始"
+    },
+    "name":"登錄",
+    "signInOption":"登陸使用",
+    "emailAddress":"電子郵件地址",
+    "password":"密碼",
+    "signUp":"註冊",
+    "signIn":"登入",
+    "signInWithMetaMask":"使用元掩碼登錄",
+    "forgotPassword":"忘記密碼？",
+    "back":"後退",
+    "signInWith":"登陸使用",
+    "noAccount":"沒有賬號？",
+    "showAllAssets":"顯示所有資產"
+  }

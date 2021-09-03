@@ -1,0 +1,18 @@
+{
+    "title": "ようこそ",
+    "description": {
+      "part1": "開始するには"
+    },
+    "name":"ログイン",
+    "signInOption":"でサインイン",
+    "emailAddress":"電子メールアドレス",
+    "password":"パスワード",
+    "signUp":"サインアップ",
+    "signIn":"サインイン",
+    "signInWithMetaMask":"メタマスクでサインイン",
+    "forgotPassword":"パスワードをお忘れですか？",
+    "back":"バック",
+    "signInWith":"でサインイン",
+    "noAccount":"アカウントがありませんか？",
+    "showAllAssets":"すべてのアセットを表示"
+  }

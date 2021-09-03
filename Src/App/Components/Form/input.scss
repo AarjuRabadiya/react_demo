@@ -1,0 +1,20 @@
+@import "../../app.scss";
+input {
+  // background: #001928;
+  background: #000;
+  border: 0;
+  outline: 0;
+  padding: $spacingSmall;
+  color: $light;
+  font-size: $textSmall;
+  font-family: $headingFontFamily;
+  font-weight: 400;
+  //   clip-path: polygon(95% 0, 100% 20px, 100% 100%, 0 100%, 0 0);
+  border-bottom: 2px solid $green;
+  width: 100%;
+  border-radius: 0;
+  -webkit-appearance: none;
+  @media (min-width: "767px") {
+    font-size: $textMedium;
+  }
+}

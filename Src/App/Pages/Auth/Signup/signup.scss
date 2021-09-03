@@ -1,0 +1,26 @@
+@import "../../../../variables.scss";
+.signUp {
+  .disable-button {
+    opacity: 0.4;
+  }
+  .button-mm {
+    font-size: $textSmall;
+    margin-left: auto;
+  }
+  .signup-link {
+    font-size: $textLarge !important;
+    font-weight: bold;
+    padding: 0 5px;
+  }
+  .linkWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    cursor: pointer;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+  }
+}

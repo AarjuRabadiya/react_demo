@@ -1,0 +1,19 @@
+{
+    "title": "Welcome",
+    "description": {
+      "part1": "To get started"
+    },
+    "name":"Login",
+    "signInOption":"Sign in with",
+    "emailAddress":"Email address",
+    "password":"Password",
+    "signUp":"Sign up",
+    "signIn":"Sign in",
+    "signInWithMetaMask":"Sign in with meta mask",
+    "forgotPassword":"forgotPassword?",
+    "back":"Back",
+    "signInWith":"sign in with",
+    "noAccount":"No account?",
+    "showAllAssets":"Show all assets"
+    
+  }

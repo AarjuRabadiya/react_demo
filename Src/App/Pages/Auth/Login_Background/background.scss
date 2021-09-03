@@ -1,0 +1,104 @@
+.containerDiv {
+  background: #072030;
+  .container {
+    background-image: linear-gradient(
+      to right,
+      #153654,
+      #264f74,
+      #366a95,
+      #4686b8,
+      #56a3dc
+    );
+    // background-image: radial-gradient(
+    //   circle,
+    //   #f6efc2,
+    //   #fed6a5,
+    //   #ffba97,
+    //   #ff9d9a,
+    //   #ff83ac,
+    //   #ee7abb,
+    //   #d675ca,
+    //   #b474d8,
+    //   #8b74ce,
+    //   #6570be,
+    //   #456aa9,
+    //   #2e6291
+    // );
+    // background: url("../assets/login-bg.jpg") no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100%;
+
+    .containerFluid {
+      display: block;
+      width: 100%;
+      margin: auto;
+      .flex {
+        display: flex;
+        position: relative;
+
+        &:after {
+          content: "";
+          display: inline-block;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(
+            to right top,
+            #a8eb12,
+            #004d7a,
+            #008793,
+            #00bf72,
+            #a8eb12
+          );
+          padding: 10px 0 10px 0;
+          border-radius: 40% 0;
+          -webkit-mask: linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+          -webkit-mask-composite: destination-out;
+          mask-composite: exclude;
+        }
+        .formContainer {
+          background-image: linear-gradient(
+            to right,
+            #0c324b6e,
+            #1e405b4d,
+            #2e4f6b78,
+            #3e5e7b85,
+            #4e6d8c7d
+          );
+
+          box-shadow: 2px 2px 10px 2px;
+          padding: 30px;
+          width: 100%;
+
+          .formDiv {
+            width: 80%;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 481px) {
+    .container {
+      width: 100%;
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      .containerFluid {
+        width: 50%;
+      }
+    }
+  }
+}

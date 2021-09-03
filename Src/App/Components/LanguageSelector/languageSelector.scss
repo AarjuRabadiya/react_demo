@@ -1,0 +1,89 @@
+@import "../../../variables.scss";
+.language-container {
+  display: flex;
+  .form-row {
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    top: 3px;
+  }
+  .language {
+    position: absolute;
+    right: 80px;
+    z-index: 9999;
+  }
+  .alignRight {
+    right: 0;
+  }
+  .assets {
+    top: 60px;
+  }
+  .all-assets {
+    background-image: linear-gradient(
+      to right,
+      #031220,
+      #013768,
+      #0d5895,
+      #124a76,
+      #031928
+    );
+    color: $whiteColor;
+    padding: 10px 3.6rem;
+  }
+  .language-active {
+    padding: 15px 2.6rem;
+    border-radius: 10px 0 0 0;
+    color: $white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $green;
+      color: $black;
+    }
+  }
+  .language-sub-menu {
+    background-color: rgba(0, 0, 0, 1);
+    padding: $spacingSmall;
+    position: absolute;
+    right: 100px;
+    display: none;
+    width: 20rem;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+  }
+  .open {
+    display: block;
+    right: 0;
+    transform: translateX(0%);
+  }
+  .language-option {
+    cursor: pointer;
+    color: $white;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: $spacingSmaller;
+
+    &:hover {
+      color: $green;
+      transform: translateX(10px);
+    }
+  }
+  .active {
+    color: $green;
+  }
+  @media (min-width: "1024px") {
+    .form-row {
+      right: 130px;
+      top: 62px;
+    }
+    .language {
+      position: fixed;
+      right: 0;
+    }
+    .language-active {
+      border-left: 2px solid $green;
+    }
+  }
+}

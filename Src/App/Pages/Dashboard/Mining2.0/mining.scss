@@ -1,0 +1,97 @@
+@import "../../../../variables.scss";
+.team-mining {
+  display: block;
+  color: $whiteColor;
+  width: 100%;
+}
+.margin-bottom {
+  margin-bottom: 10px;
+}
+.selected-section {
+  background-image: linear-gradient(136deg, #8c14cf 0%, #01c3c5 100%);
+  padding: 0.2rem;
+  width: 100%;
+  margin-right: 10px;
+  .sub-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.6rem 1.6rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  .select-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d290f6;
+    margin-bottom: 5px;
+    width: 194px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+  }
+  .back {
+    color: $greenLight;
+    margin-top: 5px;
+  }
+  .white-font {
+    color: #fff;
+  }
+}
+.mining-search-section {
+  display: block;
+  color: $whiteColor;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.search-section {
+  display: block;
+}
+.left-section {
+  width: 100%;
+  .mining-title {
+    display: block;
+    color: $whiteColor;
+    width: 100%;
+  }
+}
+.right-section {
+  width: 100%;
+}
+@media (min-width: 481px) {
+  .team-mining {
+    display: flex;
+  }
+  .search-section {
+    display: flex;
+  }
+  .selected-section {
+    width: calc(calc(100% / 4) - 10px);
+  }
+  .mining-search-section {
+    display: flex;
+    width: 30%;
+  }
+  .left-section {
+    width: 70%;
+  }
+  .right-section {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  .selected-section {
+    .select-title {
+      width: 100px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .selected-section {
+    .select-title {
+      width: 100px;
+    }
+  }
+}

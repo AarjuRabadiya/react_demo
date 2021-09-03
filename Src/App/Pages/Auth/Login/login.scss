@@ -1,0 +1,58 @@
+@import "../../../../variables.scss";
+.login-page {
+  .displayFlex {
+    display: block;
+  }
+  .formRowDisplayFlex {
+    margin: 2rem;
+    display: block;
+    // transform: skewX(-25deg);
+  }
+
+  .forgotPassword {
+    display: flex;
+    justify-content: flex-end;
+    font-size: $textLarge;
+    cursor: pointer;
+    // color: rgba(0, 255, 253);
+    color: $green;
+    font-weight: bold;
+  }
+  .linkWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacingSmaller;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    cursor: pointer;
+    width: 100%;
+    color: #fff;
+    font-size: $textLarge;
+  }
+  .signupLink {
+    font-size: $textLarge !important;
+    font-weight: bold !important;
+    padding: 0 0 0 5px !important ;
+    width: auto;
+  }
+  .metmask-button {
+    font-size: $textMedium;
+    display: flex !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  @media (min-width: 481px) {
+    .displayFlex {
+      display: flex;
+      width: 100%;
+    }
+    .formRowDisplayFlex {
+      display: flex;
+      width: calc(100% / 2 - 4rem);
+    }
+    .metmask {
+      font-size: $textMedium;
+    }
+  }
+}

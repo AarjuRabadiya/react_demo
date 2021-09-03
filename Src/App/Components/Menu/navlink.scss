@@ -1,0 +1,53 @@
+@import "../../../variables.scss";
+.menu-link {
+  color: $white;
+  text-transform: uppercase;
+  font-family: $headingFontFamily;
+  font-size: $textLarger;
+  text-decoration: none;
+  width: 100%;
+  display: table;
+  padding: $spacingSmaller 3rem !important;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: flex-start !important;
+  text-align: left;
+  &:hover {
+    font-family: $headingFontFamily;
+    width: 100%;
+    color: $light;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    clip-path: polygon(0 0%, 98% 0, 100% 12%, 100% 100%, 2% 100%, 0 100%, 0 0%);
+    background: linear-gradient(to right, #64f0a1 0%, #27a8cf 100%);
+    color: #000 !important;
+    svg,
+    path {
+      fill: #000 !important;
+    }
+  }
+  svg {
+    margin-right: $spacingSmall;
+  }
+}
+
+.nav-active {
+  font-family: $headingFontFamily !important;
+  width: 100% !important;
+  color: $light !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5) !important;
+  clip-path: polygon(
+    0 0%,
+    98% 0,
+    100% 12%,
+    100% 100%,
+    2% 100%,
+    0 100%,
+    0 0%
+  ) !important;
+  background: linear-gradient(to right, #64f0a1 0%, #27a8cf 100%) !important;
+  color: #000 !important;
+  svg,
+  path {
+    fill: #000 !important;
+  }
+}

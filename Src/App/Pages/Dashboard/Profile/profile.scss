@@ -1,0 +1,157 @@
+@import "../../../../variables.scss";
+.modal-container {
+  display: block;
+  margin: 10px;
+  width: 300px;
+  .modal-input {
+    margin: 10px;
+    input {
+      appearance: none;
+      -webkit-appearance: none;
+      outline: none;
+      width: 100%;
+      height: 40px;
+      padding-left: 5px;
+      border-radius: 10px;
+      ::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      ::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      :focus {
+        outline: none;
+      }
+      margin-bottom: 5px;
+    }
+  }
+  .modal-button {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    .submit-button {
+      height: 40px;
+      border: none;
+      background: $CheckboxBorder;
+      color: $cancleButton;
+      border: 2px solid $CheckboxBorder;
+      font-weight: bold;
+      border-radius: 0 10px;
+      outline: none;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.profile {
+  .profileButton {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .socialLink {
+    width: 100%;
+    font-size: $textMedium;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    clip-path: polygon(0 0%, 98% 0, 100% 12%, 100% 100%, 2% 100%, 0 87%, 0 0%);
+    cursor: pointer;
+    justify-content: center;
+    // background-color: $CheckboxBorder;
+
+    color: $whiteColor;
+  }
+  .google {
+    background-image: linear-gradient(
+      to left,
+      #153654,
+      #1e476b,
+      #275982,
+      #306c9a,
+      #387fb3
+    ) !important;
+  }
+  .facebook {
+    background-image: linear-gradient(
+      to right,
+      #153654,
+      #2e577c,
+      #467aa6,
+      #5f9fd2,
+      #78c6ff
+    ) !important;
+  }
+  .metaMask {
+    color: #fff !important;
+    background-image: linear-gradient(
+      to right,
+      #914b06,
+      #ac5c10,
+      #c76e19,
+      #e38123,
+      #ff942c
+    ) !important;
+    transform: skew(-25deg) !important;
+    border-radius: 20px 0 !important;
+    // border: 4px solid #8f4904 !important;
+    clip-path: none !important;
+  }
+  .socialText {
+    font-size: $textSmall;
+    padding: 20px 10px;
+    font-family: "erbaum", Open Sans, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .blackFont {
+    color: #000;
+  }
+  .socialButton {
+    width: 50% !important;
+    justify-content: flex-start !important;
+    padding: 0;
+    background: 0 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    clip-path: polygon(
+      0 0%,
+      98% 0,
+      100% 12%,
+      100% 100%,
+      0% 100%,
+      0 87%,
+      0 0%
+    ) !important;
+  }
+  .google-login {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(
+      136deg,
+      rgb(81 142 248) 0%,
+      rgb(93 195 127) 100%
+    );
+  }
+  .face-book-login {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(136deg, #8c14cf8a 0%, #01c3c580 100%);
+  }
+  @media (min-width: "481px") {
+    .socialLink {
+      width: 40%;
+    }
+  }
+}

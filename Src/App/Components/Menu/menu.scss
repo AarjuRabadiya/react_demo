@@ -1,0 +1,85 @@
+@import "../../../variables.scss";
+
+.menu-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  // display: flex;
+  width: 100%;
+  padding: 10px;
+  .container {
+    // z-index: 999;
+    // position: relative;
+    // top: 0;
+    display: flex;
+    width: 100%;
+
+    .brand {
+      background: url("./assets/brand@2x.png") no-repeat;
+      min-width: 2.6rem;
+      min-height: 4.8rem;
+      background-size: contain;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      cursor: pointer;
+      margin: auto;
+    }
+  }
+
+  .ul-section {
+    .menu-list {
+      width: 100%;
+      text-align: center;
+      display: none;
+    }
+    .menu-list-item {
+      width: 100%;
+    }
+    .svg {
+      cursor: pointer;
+      max-width: 70%;
+      width: 32px;
+      height: 26px;
+    }
+    .active {
+      display: flex !important;
+      width: 100% !important;
+      height: 100vh !important;
+      padding-top: $spacingLarge !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+
+      li {
+        margin-bottom: $spacingMedium;
+
+        a {
+          padding-left: $spacingMedium;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 481px) {
+    //   position: fixed;
+    width: 20%;
+    padding: 0px;
+    .container {
+      display: block;
+
+      .brand {
+        // margin-bottom: $spacingLarge;
+        width: 4.12rem;
+        height: 8.16rem;
+        margin: 30px auto;
+      }
+    }
+    .ul-section {
+      .menu-list {
+        display: block;
+        width: 100%;
+      }
+      .active {
+        width: 75% !important;
+      }
+    }
+  }
+}

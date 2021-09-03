@@ -1,0 +1,130 @@
+@import "../../../../variables.scss";
+.land {
+  background-color: rgb(0 0 0 / 40%);
+  .land-content {
+    .button-section {
+      padding: 20px;
+      .land-type {
+        padding: 10px 30px;
+      }
+      .resource {
+        padding: 10px 30px;
+      }
+    }
+  }
+  .land-details {
+    .main-section {
+      clip-path: polygon(
+        0 0%,
+        95% 0,
+        100% 30px,
+        100% 100%,
+        2% 100%,
+        0 100%,
+        0 0%
+      );
+      background-image: linear-gradient(136deg, #8c14cf 0%, #01c3c5 100%);
+      padding: 0.2rem;
+      display: inline-block;
+      margin: 10px;
+      .sub-section {
+        clip-path: polygon(
+          0 0%,
+          95% 0,
+          100% 30px,
+          100% 100%,
+          2% 100%,
+          0 100%,
+          0 0%
+        );
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 1.6rem 1.6rem;
+        cursor: pointer;
+        text-align: center;
+      }
+      .image-div {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .description {
+        margin-top: 10px;
+        color: white;
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .message {
+      color: white;
+    }
+  }
+  .loader-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  .formRow {
+    margin: 1rem;
+  }
+  .errorMess {
+    color: red !important;
+  }
+}
+.formRow {
+  margin: 1rem;
+}
+.errorMess {
+  color: red !important;
+  width: 90%;
+}
+.error {
+  display: flex;
+}
+.errorClose {
+  cursor: pointer;
+  color: red !important;
+  box-shadow: 1px 1px 6px 1px;
+  padding: 2px 5px;
+  border-radius: 7px;
+}
+button {
+  outline: none;
+  border: none;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: $light;
+  font-size: $textMedium;
+  padding: 10px $spacingSmaller;
+  cursor: pointer;
+}
+.submit-button {
+  background: linear-gradient(
+    to right,
+    #031220,
+    #013768,
+    #0d5895,
+    #124a76,
+    #031928
+  );
+  color: white;
+}
+.reset-button {
+  background: linear-gradient(
+    to right,
+    #031220,
+    #6c7174,
+    #a1a7ac,
+    #6c7174,
+    #031928
+  );
+  color: white;
+}

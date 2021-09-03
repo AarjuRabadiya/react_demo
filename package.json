@@ -1,38 +1,85 @@
 {
-  "name": "my_app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
-  },
+  "name": "gotahm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js --mode production",
+    "test": "echo \"No test specified\" && exit 0"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.1.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "compression-webpack-plugin": "^2.0.0",
+    "css-loader": "^5.2.6",
+    "file-loader": "^2.0.0",
+    "node-sass": "^6.0.1",
+    "path": "^0.12.7",
+    "react-hot-loader": "next",
+    "sass-loader": "^10.2.0",
+    "styled-components": "^5.0.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@arkane-network/web3-arkane-provider": "^0.21.0",
+    "bootstrap": "^5.0.2",
+    "case-sensitive-paths-webpack-plugin": "^2.3.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "gsap": "^3.2.6",
+    "html-webpack-plugin": "^4.3.0",
+    "i18next": "^19.4.4",
+    "i18next-browser-languagedetector": "^4.1.1",
+    "i18next-http-backend": "^1.0.11",
+    "i18next-xhr-backend": "^3.2.2",
+    "lodash": "^4.17.21",
+    "lottie-web": "^5.6.10",
+    "mini-css-extract-plugin": "^1.6.2",
+    "mobx": "^3.2.2",
+    "mobx-persist": "^0.4.1",
+    "mobx-react": "^4.4.2",
+    "multi-loader": "^0.1.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.0",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-dom": "^16.8.0",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.2.2",
+    "react-helmet": "^6.0.0",
+    "react-i18next": "^11.4.0",
+    "react-loader-spinner": "^4.0.0",
+    "react-loading-skeleton": "^2.2.0",
+    "react-lottie": "^1.2.3",
+    "react-modal": "^3.12.1",
+    "react-paginate": "^7.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-select": "^4.1.0",
+    "react-tooltip": "^4.2.15",
+    "sass": "^1.35.1",
+    "style-loader": "^2.0.0",
+    "web3": "^1.2.8"
   }
 }

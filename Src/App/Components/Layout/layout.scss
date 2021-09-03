@@ -1,0 +1,17 @@
+.layout-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  margin: auto;
+  background-color: rgb(0 0 0 / 26%);
+  .content {
+    width: calc(100% - 20%);
+    margin: auto;
+  }
+  @media (min-width: "481px") {
+    display: flex;
+    .content {
+      margin: 20px 50px;
+    }
+  }
+}
